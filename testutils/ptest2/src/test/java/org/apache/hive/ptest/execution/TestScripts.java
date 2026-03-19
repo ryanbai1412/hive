@@ -73,7 +73,7 @@ public class TestScripts  {
     templateVariables.put("maxSourceDirs", String.valueOf(5));
     templateVariables.put("testArguments", "-Dtest=arg1");
     templateVariables.put("clearLibraryCache", "true");
-    templateVariables.put("javaHome", "/usr/java/jdk1.7");
+    templateVariables.put("javaHome", "/usr/java/jdk1.8");
     templateVariables.put("antEnvOpts", "-Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128");
     templateVariables.put("antTestArgs", "-DgrammarBuild.notRequired=true -Dskip.javadoc=true");
     templateVariables.put("antTestTarget", "testonly");
@@ -100,7 +100,7 @@ public class TestScripts  {
     templateVariables.put("maxSourceDirs", String.valueOf(5));
     templateVariables.put("testArguments", "-Dtest=arg1");
     templateVariables.put("clearLibraryCache", "true");
-    templateVariables.put("javaHome", "/usr/java/jdk1.7");
+    templateVariables.put("javaHome", "/usr/java/jdk1.8");
     templateVariables.put("javaHomeForTests", "/usr/java/jdk1.7-other");
     templateVariables.put("antEnvOpts", "-Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128");
     templateVariables.put("antTestArgs", "");
@@ -122,7 +122,7 @@ public class TestScripts  {
     templateVariables.put("logDir", "/some/log/dir");
     templateVariables.put("testArguments", "-Dtest=arg1");
     templateVariables.put("clearLibraryCache", "false");
-    templateVariables.put("javaHome", "/usr/java/jdk1.7");
+    templateVariables.put("javaHome", "/usr/java/jdk1.8");
     templateVariables.put("antEnvOpts", "-Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128");
     String template = readResource("source-prep.vm");
     String actual = getTemplateResult(template, templateVariables);
@@ -141,7 +141,7 @@ public class TestScripts  {
     templateVariables.put("logDir", "/some/log/dir");
     templateVariables.put("testArguments", "-Dtest=arg1");
     templateVariables.put("clearLibraryCache", "true");
-    templateVariables.put("javaHome", "/usr/java/jdk1.7");
+    templateVariables.put("javaHome", "/usr/java/jdk1.8");
     templateVariables.put("antEnvOpts", "-Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128");
     templateVariables.put("mavenArgs", "-X");
     templateVariables.put("mavenBuildArgs", "-Phadoop-2");
@@ -166,7 +166,7 @@ public class TestScripts  {
     templateVariables.put("logDir", "/some/log/dir");
     templateVariables.put("testArguments", "-Dtest=arg1");
     templateVariables.put("clearLibraryCache", "true");
-    templateVariables.put("javaHome", "/usr/java/jdk1.7");
+    templateVariables.put("javaHome", "/usr/java/jdk1.8");
     templateVariables.put("antEnvOpts", "-Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128");
     templateVariables.put("repositoryType", "svn");
     templateVariables.put("additionalProfiles", "hadoop-1");
@@ -188,7 +188,7 @@ public class TestScripts  {
     templateVariables.put("logDir", "/some/log/dir");
     templateVariables.put("testArguments", "-Dtest=arg1");
     templateVariables.put("clearLibraryCache", "true");
-    templateVariables.put("javaHome", "/usr/java/jdk1.7");
+    templateVariables.put("javaHome", "/usr/java/jdk1.8");
     templateVariables.put("antEnvOpts", "-Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128");
     templateVariables.put("repositoryType", "svn");
     String template = readResource("source-prep.vm");
