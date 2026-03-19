@@ -33,7 +33,7 @@ then
   export JAVA_HOME=/usr/java/jdk1.7
   export PATH=$JAVA_HOME/bin/:$PATH
 fi
-export ANT_OPTS="-Xmx1g -XX:MaxPermSize=256m -Djava.io.tmpdir=/some/log/dir/tmp -Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128"
+export ANT_OPTS="-Xmx1g -Djava.io.tmpdir=/some/log/dir/tmp -Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128"
 export MAVEN_OPTS="-Xmx256m -Djava.io.tmpdir=/some/log/dir/tmp ${mavenEnvOpts}"
 export HADOOP_ROOT_LOGGER=INFO,console
 export HADOOP_OPTS="-Dhive.log.dir=/some/log/dir -Dhive.query.id=hadoop -Djava.io.tmpdir=/some/log/dir/tmp"
