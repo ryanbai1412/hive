@@ -16,12 +16,12 @@
 set -e
 set -x
 date +"%Y-%m-%d %T.%3N"
-if [[ -n "/usr/java/jdk1.7" ]]
+if [[ -n "/usr/java/jdk1.8" ]]
 then
-  export JAVA_HOME=/usr/java/jdk1.7
+  export JAVA_HOME=/usr/java/jdk1.8
   export PATH=$JAVA_HOME/bin/:$PATH
 fi
-export ANT_OPTS="-Xmx1g -XX:MaxPermSize=256m -Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128"
+export ANT_OPTS="-Xmx1g -Dhttp.proxyHost=somehost -Dhttp.proxyPort=3128"
 export MAVEN_OPTS="-Xmx1g ${mavenEnvOpts}"
 cd /some/working/dir/
 (
